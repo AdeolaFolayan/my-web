@@ -1,0 +1,133 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+:root {
+--custom-color: grey;
+--padding: 20px;
+--medium-font-size: 1.2em;
+--big-font-size: 2.5em;
+--input-padding: 15px 25px;
+--border: 1px solid rgb(218, 202, 218);
+--border-radius: 8px;
+--margin-top: 20px;
+--margin-bottom: 10px;
+--misc-color: rgb(170, 31, 175);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ .intro{
+    text-align:center;
+    color: var(--misc-color);
+    margin-top: var(--margin-top);
+    padding: var(--padding);
+ }
+
+.container {  
+width: 1200px;
+max-width: 100%;
+min-height: 400px;
+margin: auto;
+
+}
+
+.form  {
+width: 60%;
+margin: 30px auto;
+padding: var(--padding);
+}
+
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: var(--margin-bottom);
+}
+
+.btn-submit {
+    margin-top: var(--margin-top);
+    border: none;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: rgb(23, 20, 150);
+    color: azure;
+    font-size: var(--medium-font-size);transition: 0.3s;
+
+
+}
+
+
+.form_group-label {
+    color: var(--custom-color);
+    font-size: var(--medium-font-size);
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+
+}
+
+
+input {
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    
+}
+
+input::placeholder{
+    font-size: medium;
+}
+
+input:focus {
+    outline-color:  rgb(186, 52, 226);
+    
+}
+
+.btn-submit {
+    margin-top: var(--margin-top);
+    border: none;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: rgb(175, 31, 156);
+    color: azure;
+    font-size: var(--medium-font-size);transition: 0.3s;
+
+
+}
+
+.form_footer {
+text-align: center;
+}
+
+.btn-submit:hover {
+    background: rgb(124, 47, 160);
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400 500 600 700;
+
+}
+
+@media (min-width:375px)
+{
+     body 
+     {
+        color: hsl(0, 100%, 74%) hsl(248, 32%, 49%)  hsl(249, 10%, 26%);
+
+    }
+}
+
+@media (max-width: 1440px) {
+body
+   { color: hsl(154, 59%, 51%)  hsl(248, 32%, 49%) hsl(246,25%, 77%);
+
+   }
+
+}
